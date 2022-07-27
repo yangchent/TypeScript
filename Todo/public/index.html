@@ -7,19 +7,30 @@
     <title>Document</title>
     <script type="module" src="/dist/index.js"></script>
     <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #new-task-form{
+            margin-top: 8rem;
+        }
         #list {
             list-style: none;
-            padding: 0;
         }
     </style>
 </head>
 <body>
-    <ul id="list">
+    <div class="container">
+        <form action="" id="new-task-form">
+            <input type="text" id="new-task-title">
+            <button type="submit">Add</button>
+        </form>
+        <ul id="list">
 
-    </ul>
-    <form action="" id="new-task-form">
-        <input type="text" id="new-task-title">
-        <button type="submit">Add</button>
-    </form>
+        </ul>
+    </div>
+    
 </body>
 </html>
